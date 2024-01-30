@@ -1,0 +1,36 @@
+{
+  "name": "playwright-test-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:chromium:debug": "npx playwright test --debug --project=chromium",
+    "test:firefox:debug": "npx playwright test --debug --project=firefox",
+    "test:webkit:debug": "npx playwright test --debug --project=webkit",
+    "test:chromium": "npx playwright test --project=chromium",
+    "test:firefox": "npx playwright test --project=firefox",
+    "test:webkit": "npx playwright test --project=webkit",
+    "test:all": "npx playwright test",
+    "test:ui": "npx playwright test --ui",
+    "test:debug": "npx playwright test --debug",
+    "fast:debug:firefox": "npx playwright test --debug --project=firefox --grep @fast",
+    "fast:debug:webkit": "npx playwright test --debug --project=webkit --grep @fast",
+    "fast:debug:chromium": "npx playwright test --debug --project=chromium --grep @fast",
+    "test:fast": "npx playwright test --grep @fast",
+    "test:chromium:fast": "npx playwright test --project=chromium --grep @fast",
+    "test:firefox:fast": "npx playwright test --project=firefox --grep @fast",
+    "test:webkit:fast": "npx playwright test --project=webkit --grep @fast",
+    "test:slow": "npx playwright test --grep @slow",
+    "test:chromium:slow": "npx playwright test --project=chromium --grep @slow",
+    "test:firefox:slow": "npx playwright test --project=firefox --grep @slow",
+    "test:webkit:slow": "npx playwright test --project=webkit --grep @slow"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.41.1",
+    "@types/node": "^20.11.10",
+    "dotenv": "^16.4.1"
+  }
+}
