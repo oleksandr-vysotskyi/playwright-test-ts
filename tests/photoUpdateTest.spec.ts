@@ -15,6 +15,6 @@ test.describe('User profile photo upload of Hillel QA Auto site', () => {
     await editModal.waitForSuccessfulPhotoUpload().then((response) => {
       expect(response.status()).toBe(200)
     });
-    await editModal.successBannerCheck();
+    await expect(editModal.successBanner).toBeVisible();
   });
 });
